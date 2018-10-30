@@ -3,10 +3,9 @@ let driver = {
 } 
 
 function updateDriverWithKeyAndValue(driver,key,value) {
-const driverCopy = {...driver} //spread operator - take everything and spread to new object
-//{name: Sam}
+const driverCopy = {...driver}
 driverCopy[key] = value
-return driverCopy
+return driverCopy;
 }
 
 function destructivelyUpdateDriverWithKeyAndValue(driver,key,value) {
